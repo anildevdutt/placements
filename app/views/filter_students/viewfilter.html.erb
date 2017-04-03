@@ -1,0 +1,10 @@
+<h1>Filtered students</h1>
+
+<%= form_tag 'sendemail' do %>
+
+  <%  @students.each do |s| %>
+    <%= s.name %><br>
+    <%= hidden_field_tag 'studentslist[]', s.id %>
+  <% end %>
+  <%= submit_tag 'Send Email'%>
+<% end %>

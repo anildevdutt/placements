@@ -1,0 +1,22 @@
+<h1>FilterStudents</h1>
+
+<%= form_tag 'afilter' do %>
+
+  <%= label_tag 'Min CGPA' %>
+  <%= number_field_tag 'mincgpa' %>
+
+  <%= label_tag 'Max CGPA' %>
+  <%= number_field_tag 'maxcgpa' %>
+
+  <%= label_tag 'Allowed Active backlogs' %>
+  <%= number_field_tag 'abacklog' %>
+
+  <%= label_tag 'Placement status' %>
+  <%= label_tag 'Placed' %>
+  <%= check_box_tag 'placed' %>
+  <%= label_tag 'Not placed' %>
+  <%= check_box_tag 'notplaced' %>
+
+  <%= submit_tag 'Filter Students' %>
+
+<% end %>

@@ -1,0 +1,13 @@
+<%= render 'navbar' %>
+<div class="container" >
+  <div class="well wellbg">
+  <h1>Login</h1>
+    <%= form_tag access_chklogin_path do %>
+      <%= label_tag 'Username' %>
+      <%= text_field_tag 'uname' %>
+      <%= label_tag 'Password' %>
+      <%= password_field_tag 'pass' %>
+      <%= submit_tag 'Login' %>
+    <% end %>
+  </div>
+</div>
