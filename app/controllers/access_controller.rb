@@ -11,6 +11,9 @@ class AccessController < ApplicationController
   def login
   end
 
+  def index
+  end
+
   def logout
     session.delete(:admin_id)
     redirect_to(access_login_path)

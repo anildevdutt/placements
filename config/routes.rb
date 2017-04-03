@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'access#login'
+
 
   get 'access/home'
 
@@ -23,6 +23,8 @@ Rails.application.routes.draw do
   post 'access/chklogin'
 
   get 'students/editpwd'
+
+  get 'access/index'
 
   resources :admins
   resources :students
