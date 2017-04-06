@@ -6,5 +6,7 @@
     <%= s.name %><br>
     <%= hidden_field_tag 'studentslist[]', s.id %>
   <% end %>
+  <%= label_tag "Format email" %>
+  <%= text_area_tag 'mailcontent', nil, size: "25x10" %>
   <%= submit_tag 'Send Email'%>
 <% end %>

@@ -17,8 +17,8 @@ class NotificationMailer < ApplicationMailer
   #
   #   en.notification_mailer.selected.subject
   #
-  def selected(user)
-    @greeting = "Hi"
+  def selected(user, mailcontent)
+    @greeting = mailcontent
     mail to: user.email, subject: 'your selected'
   end
 end

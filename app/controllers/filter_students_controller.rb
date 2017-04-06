@@ -25,7 +25,7 @@ class FilterStudentsController < ApplicationController
   def sendemail
     params[:studentslist].each do |s|
       student = Student.find(s)
-      NotificationMailer.selected(student).deliver
+      NotificationMailer.selected(student, params[:mailcontent]).deliver
     end
 
   end
