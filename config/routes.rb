@@ -26,6 +26,8 @@ Rails.application.routes.draw do
 
   get 'access/index'
 
+  get 'access/loginfail'
+
   resources :admins
   resources :students
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

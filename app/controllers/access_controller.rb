@@ -30,8 +30,8 @@ class AccessController < ApplicationController
       flash[:notice] = "Your now logged in"
       redirect_to(students_path)
     else
-      flash.now[:notice] = "Invalid username/password"
-      render('login')
+      flash[:notice] = "Invalid username/password"
+      render 'loginfail'
     end
   end
 end
